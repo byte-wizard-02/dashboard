@@ -1,0 +1,75 @@
+/* ================= MAIN CONTENT ================= */
+section.main {
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+section.main > div {
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+    white-space: nowrap !important;
+    padding-bottom: 2rem;
+}
+
+/* ================= SIDEBAR SCROLL FIX ================= */
+section[data-testid="stSidebar"] {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    max-height: 100vh !important;
+    scrollbar-width: thin;
+    scrollbar-color: #999 transparent;
+}
+section[data-testid="stSidebar"]::-webkit-scrollbar:horizontal {
+    display: none !important;
+    height: 0 !important;
+}
+
+/* ================= SCROLLBAR STYLING ================= */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+/* ================= HEADINGS, TEXT, LOGO ================= */
+h1, h2, h3, h4 {
+    color: black;
+}
+.metric-label {
+    font-weight: bold;
+}
+.sidebar-logo {
+    transition: none !important;
+    transform: none !important;
+}
+
+/* ================= RESPONSIVE FIXES ================= */
+@media (max-width: 768px) {
+    .css-1d391kg {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .css-1lcbmhc.e1fqkh3o3 {
+        flex-direction: column !important;
+    }
+    h1 {
+        font-size: 1.5rem !important;
+    }
+    h2 {
+        font-size: 1.3rem !important;
+    }
+}
+@media (min-width: 768px) {
+    .css-1lcbmhc {
+        flex-wrap: nowrap !important;
+    }
+    .main, section.main {
+        flex-grow: 1 !important;
+        flex-basis: 0 !important;
+        min-width: 0 !important;
+    }
+}

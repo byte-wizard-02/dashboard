@@ -1,0 +1,15 @@
+# Core Streamlit dashboard stack
+streamlit>=1.30.0
+pandas>=1.5
+numpy>=1.23
+plotly>=5.15
+
+# Forecasting model
+neuralprophet>=0.6.2
+torch>=2.0.0  # Required for neuralprophet
+
+# Optional HTTP + parsing
+requests>=2.28
+
+# Compatibility and UI
+typing-extensions>=4.5
